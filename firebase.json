@@ -1,0 +1,43 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "gestion-b8736",
+          "appId": "1:159434246863:android:d38ac9b188cd4f162a05ba",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "gestion-b8736",
+          "configurations": {
+            "android": "1:159434246863:android:d38ac9b188cd4f162a05ba",
+            "macos": "1:159434246863:ios:63cb81ff46bfd12a2a05ba",
+            "web": "1:159434246863:web:ab668785493c4d1a2a05ba"
+          }
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "gestion-b8736",
+          "appId": "1:159434246863:ios:63cb81ff46bfd12a2a05ba",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "gestion-b8736",
+          "appId": "1:159434246863:ios:63cb81ff46bfd12a2a05ba",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      }
+    }
+  }
+}

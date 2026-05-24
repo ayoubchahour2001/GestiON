@@ -1,0 +1,29 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+.metadata
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Firebase - NUNCA subir credenciales reales
+google-services.json
+GoogleService-Info.plist
+.env
+
+# El archivo firebase_options.dart real (con claves) no debe subirse.
+# Mantener solo la plantilla. Descomenta la linea siguiente cuando lo regeneres:
+# lib/firebase_options.dart
+
+# Sistema
+.DS_Store
+*.log
+
+# Claude Code (herramienta de desarrollo — no subir)
+.claude/

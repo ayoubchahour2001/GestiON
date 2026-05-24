@@ -1,0 +1,20 @@
+rules_version = '2';
+
+// Reglas de seguridad de Cloud Firestore para GestiON.
+// Cada usuario solo puede leer y escribir sus propios datos.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /usuarios/{uid} {
+      // El propio usuario puede gestionar su documento de perfil.
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      // Subcolecciones (productos, clientes, ventas):
+      // accesibles solo por el usuario propietario.
+      match /{coleccion}/{docId} {
+        allow read, write: if request.auth != null
+                           && request.auth.uid == uid;
+      }
+    }
+  }
+}
