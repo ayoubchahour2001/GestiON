@@ -244,7 +244,7 @@ El campo `sincronizado` (0/1) permite reenviar a Firestore las ventas registrada
 
 ```bash
 # 1. Clonar el repositorio
-git clone <url-del-repositorio>
+git clone https://github.com/ayoubchahour2001/GestiON
 cd gestion_app
 
 # 2. Instalar dependencias
